@@ -21,7 +21,7 @@ const drawConditions = {
 async function calcScore() {
   let totalScore = 0;
 
-  const data = await readFile("./day2data.txt", { encoding: "utf8" });
+  const data = await readFile("./data/day2.txt", { encoding: "utf8" });
   const dataArr = data.split("\n");
   for (const play of dataArr) {
     const theirMove = play[0];

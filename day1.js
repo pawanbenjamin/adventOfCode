@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 
 async function readText() {
-  const contents = await readFile("./day1Data.txt", { encoding: "utf8" });
+  const contents = await readFile("./data/day1.txt", { encoding: "utf8" });
   const elves = contents.split("\n\n");
   let mostCalories = 0;
   for (const elf of elves) {
